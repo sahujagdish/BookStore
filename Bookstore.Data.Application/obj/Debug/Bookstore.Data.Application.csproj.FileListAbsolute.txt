@@ -1,0 +1,10 @@
+D:\Test Applications\Booktore\Bookstore.Data.Application\obj\Debug\Bookstore.Data.Application.csprojResolveAssemblyReference.cache
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\Bookstore.Data.Application.dll.config
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\Bookstore.Data.Application.dll
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\Bookstore.Data.Application.pdb
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\EntityFramework.dll
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\EntityFramework.SqlServer.dll
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\EntityFramework.xml
+D:\Test Applications\Booktore\Bookstore.Data.Application\bin\Debug\EntityFramework.SqlServer.xml
+D:\Test Applications\Booktore\Bookstore.Data.Application\obj\Debug\Bookstore.Data.Application.dll
+D:\Test Applications\Booktore\Bookstore.Data.Application\obj\Debug\Bookstore.Data.Application.pdb
