@@ -25,6 +25,13 @@ D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\System.Web.Razo
 D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\System.Web.WebPages.xml
 D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\System.Web.WebPages.Razor.xml
-D:\Test Applications\Booktore\BookStore.Infrastructure\obj\Debug\BookStore.Infrastructure.csprojResolveAssemblyReference.cache
 D:\Test Applications\Booktore\BookStore.Infrastructure\obj\Debug\BookStore.Infrastructure.dll
 D:\Test Applications\Booktore\BookStore.Infrastructure\obj\Debug\BookStore.Infrastructure.pdb
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\BookStore.Infrastructure.dll.config
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\BookStore.Business.dll
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\Bookstore.Data.Application.dll
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\EntityFramework.dll
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\BookStore.Business.pdb
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\Bookstore.Data.Application.pdb
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\EntityFramework.xml
+D:\Test Applications\Booktore\BookStore.Infrastructure\obj\Debug\BookStore.Infrastructure.csprojResolveAssemblyReference.cache

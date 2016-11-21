@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using BookStore.Business;
 
 namespace BookStore.Infrastructure
 {
@@ -24,17 +25,20 @@ namespace BookStore.Infrastructure
             // register all your components with the container here  
             //This is the important line to edit  
             //var container = new UnityContainer();
-            // container.RegisterType<ICompanyRepository, CompanyRepository>();
+            // container.RegisterType<ICompanyRepository, CompanyRep    ository>();
 
             using (var container = new UnityContainer())
             {
-                //var currentAssembly = Assembly.LoadFrom(assembly);
+               //var currentAssembly = Assembly.LoadFrom(assembly);
 
                 container.RegisterTypes(
                    AllClasses.FromAssembliesInBasePath(),
                    WithMappings.FromMatchingInterface,
                    WithName.Default,
                    WithLifetime.ContainerControlled);
+
+                container.RegisterType<IUserRepository, UserRepository>(new HierarchicalLifetimeManager());
+
 
                 RegisterTypes(container);
                 return container;

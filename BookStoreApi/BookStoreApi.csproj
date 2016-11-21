@@ -76,6 +76,13 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\BookStore\BookStore.Infrastructure\bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Mvc">
+      <HintPath>..\..\..\BookStore\BookStore.Infrastructure\bin\Debug\Microsoft.Practices.Unity.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -116,10 +123,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BaseController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -135,8 +145,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookStore.Business\BookStore.Business.csproj">
+      <Project>{e052cd00-89f9-461e-b6c9-5dd25b6c3af6}</Project>
+      <Name>BookStore.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bookstore.Data.Application\Bookstore.Data.Application.csproj">
+      <Project>{61f4378c-0562-45e6-9920-2e3411aa6a97}</Project>
+      <Name>Bookstore.Data.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookStore.Infrastructure\BookStore.Infrastructure.csproj">
+      <Project>{915d5627-3139-4ea7-b903-f9893acbbf2b}</Project>
+      <Name>BookStore.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

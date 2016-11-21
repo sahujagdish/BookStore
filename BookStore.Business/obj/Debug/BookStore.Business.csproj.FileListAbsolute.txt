@@ -1,0 +1,8 @@
+D:\Test Applications\Booktore\BookStore.Business\bin\Debug\BookStore.Business.dll
+D:\Test Applications\Booktore\BookStore.Business\bin\Debug\BookStore.Business.pdb
+D:\Test Applications\Booktore\BookStore.Business\obj\Debug\BookStore.Business.dll
+D:\Test Applications\Booktore\BookStore.Business\obj\Debug\BookStore.Business.pdb
+D:\Test Applications\Booktore\BookStore.Business\bin\Debug\Bookstore.Data.Application.dll
+D:\Test Applications\Booktore\BookStore.Business\bin\Debug\EntityFramework.dll
+D:\Test Applications\Booktore\BookStore.Business\bin\Debug\Bookstore.Data.Application.pdb
+D:\Test Applications\Booktore\BookStore.Business\bin\Debug\EntityFramework.xml

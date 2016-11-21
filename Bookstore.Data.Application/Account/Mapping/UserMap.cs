@@ -21,7 +21,7 @@ namespace Bookstore.Data.Application.Account.Mapping
             Property(t => t.Email).IsRequired();
             Property(t => t.AddedDate).IsRequired();
             Property(t => t.ModifiedDate).IsRequired();
-            Property(t => t.IP);
+            Property(t => t.IP);            
 
             //table  
             ToTable("Users");
