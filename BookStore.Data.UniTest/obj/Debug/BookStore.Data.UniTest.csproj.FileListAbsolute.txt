@@ -2,6 +2,6 @@ D:\Test Applications\Booktore\BookStore.Data.UniTest\bin\Debug\BookStore.Data.Un
 D:\Test Applications\Booktore\BookStore.Data.UniTest\bin\Debug\BookStore.Data.UniTest.pdb
 D:\Test Applications\Booktore\BookStore.Data.UniTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 D:\Test Applications\Booktore\BookStore.Data.UniTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-D:\Test Applications\Booktore\BookStore.Data.UniTest\obj\Debug\BookStore.Data.UniTest.csprojResolveAssemblyReference.cache
 D:\Test Applications\Booktore\BookStore.Data.UniTest\obj\Debug\BookStore.Data.UniTest.dll
 D:\Test Applications\Booktore\BookStore.Data.UniTest\obj\Debug\BookStore.Data.UniTest.pdb
+D:\Test Applications\Booktore\BookStore.Data.UniTest\obj\Debug\BookStore.Data.UniTest.csprojResolveAssemblyReference.cache

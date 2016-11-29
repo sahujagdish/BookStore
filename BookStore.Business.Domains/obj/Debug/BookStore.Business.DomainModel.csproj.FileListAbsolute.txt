@@ -1,0 +1,4 @@
+D:\Test Applications\Booktore\BookStore.Business.Domains\bin\Debug\BookStore.Business.Domains.dll
+D:\Test Applications\Booktore\BookStore.Business.Domains\bin\Debug\BookStore.Business.Domains.pdb
+D:\Test Applications\Booktore\BookStore.Business.Domains\obj\Debug\BookStore.Business.Domains.dll
+D:\Test Applications\Booktore\BookStore.Business.Domains\obj\Debug\BookStore.Business.Domains.pdb

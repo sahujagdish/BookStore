@@ -1,40 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Bookstore.Data.Application.Account.Entities;
+using BookStore.Business.Domains.Output;
+using Bookstore.Data.Application;
+
 namespace BookStore.Business
 {
     public interface IUserRepository
     {
-        IEnumerable<User> GetAll();
+        List<UserOutputModel> GetAll();
+        UserOutputModel GetUserById(int Id);
+        UserOutputModel GetUserByUserName(string userName, string password);
     }
 
     public class UserRepository : IUserRepository
     {
-        private List<User> user = new List<User>();
-        private int _nextId = 1;
+        //private List<User> user = new List<User>();
+        //private int _nextId = 1;
+
+
+        private UnitOfWork unitOfWork = new UnitOfWork();
+        private Repository<User> userRepository;
 
         public UserRepository ()
         {
-            // Add products for the Demonstration  
-            Add(new User { UserName = "chenoa", Email = "Engenering@chenoa.com" });
-            Add(new User { UserName = "Wipro", Email = "software@wipro.com" });
-            Add(new User { UserName = "HSBC", Email = "Bank@HSBC.com" });
+            userRepository = unitOfWork.Repository<User>();
         }
 
-        public IEnumerable<User> GetAll()
+        public List<UserOutputModel> GetAll()
         {
-            return user;
+            return (from user in userRepository.AsQueryable() select new UserOutputModel
+                        {
+                            UserId = user.ID,
+                            UserName =user.UserName,
+                            Email = user.Email
+                            //Address = user.UserProfile.Address
+
+                        }).ToList<UserOutputModel>();
         }
 
-
-        public User Add(User item)
+        public UserOutputModel GetUserById(int Id)
         {
-            item.ID = _nextId++;
-            user.Add(item);
-            return item;
+            return (from user in userRepository.AsQueryable()
+                    select new UserOutputModel
+                    {
+                        UserId = user.ID,
+                        UserName = user.UserName,
+                        Email = user.Email
+                    }).Where(a => a.UserId == Id).FirstOrDefault<UserOutputModel>();
+        }
+
+        public UserOutputModel GetUserByUserName(string userName, string password)
+        {
+            return (from user in userRepository.AsQueryable()
+                    select new UserOutputModel
+                    {
+                        UserId = user.ID,
+                        UserName = user.UserName,
+                        Email = user.Email
+                    }).Where(a => a.UserName == userName && a.Password == password).FirstOrDefault<UserOutputModel>();
         }
     }
 }

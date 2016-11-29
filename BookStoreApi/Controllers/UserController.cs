@@ -12,17 +12,17 @@ namespace BookStoreApi.Controllers
 {
     public class UserController : BaseController
     {
-        readonly IUserRepository repo;
+        readonly IUserRepository userRepository;
 
-        public UserController(IUserRepository tempProduct)
+        public UserController(IUserRepository _userRepository)
         {
-            this.repo = tempProduct;
+            userRepository = _userRepository;
         }
 
         [HttpGet()]
         public string Index()
         {
-            var data = repo.GetAll();
+            var data = userRepository.GetUserByUserName("Jagdish","Sahu");
             return JsonConvert.SerializeObject(data);
         }
 

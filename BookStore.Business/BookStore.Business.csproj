@@ -30,11 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bookstore.Data.Application">
-      <HintPath>..\..\..\BookStore\Bookstore.Data.Application\bin\Debug\Bookstore.Data.Application.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +44,16 @@
   <ItemGroup>
     <Compile Include="UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookStore.Business.Domains\BookStore.Business.DomainModel.csproj">
+      <Project>{d52101b0-fe16-48ab-8861-c010f1ede80c}</Project>
+      <Name>BookStore.Business.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bookstore.Data.Application\Bookstore.Data.Application.csproj">
+      <Project>{61f4378c-0562-45e6-9920-2e3411aa6a97}</Project>
+      <Name>Bookstore.Data.Application</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

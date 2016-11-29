@@ -102,12 +102,9 @@ namespace Bookstore.Data.Application
             }
         }
 
-        public virtual IQueryable<T> Table
-        {
-            get
-            {
+        public virtual IQueryable<T> AsQueryable()
+        {  
                 return this.Entities;
-            }
         }
 
         private IDbSet<T> Entities

@@ -35,3 +35,5 @@ D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\BookStore.Busin
 D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\Bookstore.Data.Application.pdb
 D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\EntityFramework.xml
 D:\Test Applications\Booktore\BookStore.Infrastructure\obj\Debug\BookStore.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\BookStore.Business.Domains.dll
+D:\Test Applications\Booktore\BookStore.Infrastructure\bin\Debug\BookStore.Business.Domains.pdb
